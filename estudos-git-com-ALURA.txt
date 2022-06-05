@@ -1,0 +1,113 @@
+GIT - Sistema de Controle de versão
+
+Os Sistemas de controle de versões podem ajudar em nosso fluxo de desenvolvimento:
+- mantendo um histórico de alterações;
+- Nos ajudam a ter controle sobre cada alteração no código;
+- Nos ajudam para que uma alteração de determinada pessoa não influencie na alteração realizada por outra;
+Etc.
+
+
+Servidor separado para receber as alterações ( Controle de Versçoa)
+
+GIT é um dos mais utilizados.
+Repositórios distribuidos.
+
+
+git init - inilializar um repositório do git para ser monitorado.
+
+Inicializa um repositório no diretório em que o comando for executado. A partir deste comando, o Git poderá gerenciar as modificações realizadas nos arquivos.
+
+
+
+git status - mostra a situaçõa do repositorio
+
+git add <nome_do-arquivo> - adiciona o arquivo a ser monitorado.
+
+
+Git commit - é o check point ( dizer - aqui aconteceu uma alteraçõ).
+
+git commit - m 'Criando arquivo index.html com lista de cursos'
+
+Link adicional: https://git-scm.com/book/pt-br/v2/Fundamentos-de-Git-Gravando-Altera%C3%A7%C3%B5es-em-Seu-Reposit%C3%B3rio
+
+git log - verificar todas as alterações
+git log --oneline - verifica as alterações em uma linha
+git log -p = informações detalhas sobre os commits.
+
+git config - para alterar nome e email
+gi confi user.name
+git confi user.email
+
+
+
+VERIFICANDO HISTÓRICO DA APLICAÇÃO 
+GIT LOG
+LINK: https://devhints.io/git-log
+
+
+IGNORANDO ARQUIVOS
+criando o .gitignore
+
+Não há  um consenso sobre quando comitar, mas VC NUNCA DEVE COMMITAR CÓDIGO COM PROBLEMA.
+
+A cada alteração significativa, vc deve gerar um commit.
+Não existe uma regra.
+
+Sempre que uma pequena funcionalidade for implementada;
+quando um bug for corrigido.
+
+um conjunto de commits geram um sistema como um todo.
+
+
+
+Repositórios Remotos - Servidor remoto para onde enviamos nossas alterações para que outras pessoas possam acessar
+
+servidor remoto na maquina ( pago)
+
+cd .. ( subir uma pasta)
+
+mkdir nome-da-pasta - criar uma pasta
+
+git init --bare  ( para ser um repositorio apenas para controlar as alteração - não será utilizado para editar aquirvo)
+o parametro bere  repositorio puro , so contem as alterações e não os arquivos)
+~/Documents/GitHub/Projetos-Alura/alura-git 
+Com este comando nós criamos um repositório que não terá a working tree, ou seja, não conterá uma cópia dos nossos arquivos. Como o repositório servirá apenas como servidor, para que outros membros da equipe sincronizem seus trabalhos, poupamos espaço de armazenamento desta forma.
+
+
+git remote add nome-repositorio caminho/para/o/repositorio
+Desta forma teremos um link do nosso repositório local com o repositório remoto, que chamamos de nome-repositorio, que está armazenado em caminho/para/o/repositorio.
+
+
+git remote -v ( para verificar o repositorio remoto)
+
+git clone (caminho par ao repositorio remoto)
+
+
+git push local master
+ e assim, serão enviados todos os dados por todos os códigos e alterações feitas até então para nosso repositório que chamamos de "local", dentro de "servidor". Após pressionarmos "Enter", teremos a mensagem de que uma nova branch (ramo) foi criada em "servidor", chamada master.
+
+
+
+puxar o sa dados
+
+
+git pull ( repositorio local) master
+
+
+Eu posso compartilhar um servidor local (uma pasta) ou um servidor remoto
+
+
+
+Repositório remoto  (Github)
+
+git push -u origin master
+
+O que são repositórios remotos;
+Como criar um repositório Git sem uma cópia dos arquivos (com --bare) para ser utilizado como servidor;
+Como adicionar links para os repositórios remotos, com o comando git remote add;
+Como baixar um repositório pela primeira vez, clonando-o com o comando git clone;
+Como enviar as nossas alterações para um repositório remoto, com git push;
+Como atualizar o nosso repositório com os dados no repositório remoto, utilizando git pull;
+
+
+
