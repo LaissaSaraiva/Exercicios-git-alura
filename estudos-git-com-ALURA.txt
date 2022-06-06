@@ -143,9 +143,43 @@ Como levar o trabalho de um branch para outra.
 
 UNIFICAÇÃO DE BRACNEHS - GIT MERGE
 
+O master é a branch principal, poir precisamos trazer as alteraçãoes das outras branches para esta principal.
 
-git merge 
+MASTER
+TITULO
 
+Para trazer a titulo para master é preciso:
+
+git merge titulo ( a partir da master).
+
+Desta forma colocaremos o HEAD na branch master, ou seja, faremos com que o nosso código esteja no estado que o deixamos com o último commit na master. Depois, uniremos o trabalho da branch titulo com a branch atual (master).
+
+
+ATUALIZANDO A BRANCH
+
+atualizando sem usar o merge;
+utilizando um unica linha
+commando 
+A partir da master
+
+git rebase titulo
+
+
+MERGE OU REBASE
+
+O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual.
+
+
+Alternativa correta! Com isso, evitamos os commits de merge. Há uma longa discussão sobre o que é "melhor": rebase ou merge. Estude, pesquise, e tire suas próprias conclusões. Aqui tem um artigo (de milhares outros) que cita o assunto: https://medium.com/datadriveninvestor/git-rebase-vs-merge-cc5199edd77c.
+
+
+
+gIT PULL
+
+Sempre antes de seguir com minha atualização devemos fazer GIT PULL
+
+
+ 
 
 
 
