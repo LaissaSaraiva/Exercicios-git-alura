@@ -110,4 +110,42 @@ Como enviar as nossas alterações para um repositório remoto, com git push;
 Como atualizar o nosso repositório com os dados no repositório remoto, utilizando git pull;
 
 
+TRABALHANDO EM EQUIPES!
+
+Branches ("ramos") são utilizados para desenvolver funcionalidades isoladas umas das outras. A branch master é a branch "padrão" quando você cria um repositório.
+
+É interessante separar o desenvolvimento de funcionalidades em branches diferentes, para que as mudanças no código para uma não influencie no funcionamento de outra.
+
+Ramificações do arquivo são para trabalhar melhor em equipe
+
+Comandos:
+
+visualizar branch
+git branch
+
+
+criar uma nova branch
+git branch 'nome da branch'
+
+
+para mudar a linha de desevovlimento
+
+git checkout 'nome da branch'
+
+
+ATALHO PARA CRIAR NOVA BRANCHE JÁ MUDAR PARA ELA
+
+git checkout -b lista
+
+
+
+Como levar o trabalho de um branch para outra.
+
+UNIFICAÇÃO DE BRACNEHS - GIT MERGE
+
+
+git merge 
+
+
+
 
