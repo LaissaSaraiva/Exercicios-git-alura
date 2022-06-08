@@ -179,6 +179,26 @@ gIT PULL
 Sempre antes de seguir com minha atualização devemos fazer GIT PULL
 
 
+DESFAZENDO ALTERAÇÕES
+
+git checkout -- <arquivo para ser desfeito>
+git restore <arquivo para ser desfeito>
+
+$ git checkout -- index.html
+$ git restore index.html
+
+
+Desfazendo git add
+
+"git restore --staged <file>.
+tatus
+
+
+Desfazendo um Commit
+
+git revert HASH (numero do comiit)
+
+
  
 
 
