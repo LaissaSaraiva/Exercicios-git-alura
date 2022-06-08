@@ -179,6 +179,10 @@ gIT PULL
 Sempre antes de seguir com minha atualização devemos fazer GIT PULL
 
 
+DESFAZENDO ALTERAÇÕES
+
+
+
  
 
 
