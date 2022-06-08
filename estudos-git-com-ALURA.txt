@@ -201,5 +201,38 @@ git revert HASH (numero do comiit)
 
  
 
+Quais os comandos, respectivamente, desfazem alterações antes de adicioná-las (1); depois de adicioná-las, mas antes de commitá-las (2); e após realizar o commit (3)?
 
+1 - git checkout
+
+2 - git reset
+
+3 - git revert
+
+
+
+
+--- Guardando um pedaço de alteração para voltar a trabalhar nela depois.
+
+alteraçõs em um local temporario
+Quando precisamos pausar o desenvolvimento de alguma funcionalidade, ou correção, antes de finalizar, talvez não seja interessante realizar um commit, pois o nosso código pode não estar funcionando ainda. Nesse caso é interessante salvar o trabalho para podermos voltar a ele depois.
+
+git Stash
+
+
+trazer dados do stach
+opção 1
+Git stash list ( lista do que posso aplicar)
+
+
+
+git stach apply <numero da stach>
+mas, as modificações continuam no stacsh
+
+Logo após é necessári ofazer git stash drop
+
+-- as duas coisas ao mesmo tempo - pegar a ulmtima alteraçõa e remover de lá
+
+
+Git stash pop
 
