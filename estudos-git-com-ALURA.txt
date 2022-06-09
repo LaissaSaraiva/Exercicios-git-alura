@@ -272,3 +272,67 @@ Que o git checkout serve para deixar a cópia do código da nossa aplicação no
 git checkout <branch> deixa o código no estado de uma branch com o nome <branch>;
 git checkout <hash> deixa o código no estado do commit com o hash <hash>.
 
+
+
+Ver Commit por commit
+
+git log - p
+
+
+git diff ( mostra a diferente entre os codigos.
+
+ver a diferença entre dois commits
+
+git diff hash(7digitos) .. (hash)
+
+
+ver a diferença em arquivo que ainda estou editando.
+
+
+git diff.
+
+obs: Se der git add ( não funcionará)
+
+
+Tags e Releases
+
+
+git log -n 2 ( ultimos 2 commits)
+
+tag marca um ponto fixo ( que não pode ser moficiado) numa aplicação.
+
+
+a versão 1.0 - nunca mais vai ser modificadas.
+as alterações serão versão 2.0
+
+adicionar tag
+
+git tag -a v0.1.0 -m 'lançando a primeira versão Beta da aplicação'
+
+
+verificar tags
+
+git tag
+
+enviar tag
+
+
+git push origin v0.1.0
+
+
+Feature do Git hub
+visualizando as Releases( tags geradas)
+
+
+O GitHub nos dá a possibilidade de baixar um arquivo compactado contendo o código no estado em que a tag foi gerada.
+
+
+Nesta aula, aprendemos:
+
+Que é possível visualizar quais alterações foram realizadas em cada arquivo, com o comando git diff;
+Que, digitando apenas git diff, vemos as alterações em nossos arquivos que não foram adicionadas para commit (com git add);
+Que é possível comparar as alterações entre duas branches com git diff <branch1>..<branch2>
+Que é possível comparar as alterações feitas entre um commit e outro, através do comando git diff <commit1>..<commit2>;
+Que o Git nos possibilita salvar marcos da nossa aplicação, como por exemplo, lançamento de versões, através do git tag;
+Que o comando git tag -a é utilizado para gerar uma nova tag;
+As Releases do GitHub, que são geradas para cada tag do Git criada em nosso repositório.
